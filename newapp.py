@@ -10,7 +10,7 @@ app=Flask(__name__)
 mydb = connector.connect(
     host="localhost",
     user="root",
-    passwd="9960551687",
+    passwd="",
     database="bankdb")
 
 mycur = mydb.cursor()
