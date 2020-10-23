@@ -20,7 +20,7 @@ def index():
 		name=userdetails['name']
 		email=userdetails['email']
 		mycur.execute("insert into users(name,email) values(%s,%s)"(name,email))
-		mydb.commit()
+		mysql.commit()
 		mycur.close()
 		return 'success'
 	return render_template('index.html')
