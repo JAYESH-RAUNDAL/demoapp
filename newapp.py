@@ -30,7 +30,7 @@ def index():
 		val=(name,email)
 		mycur.execute(query,val)	
 		mydb.commit()
-		print('data inserted sucessfuly')
+		return'data inserted sucessfuly'
 		
 	return render_template('index.html')
 
