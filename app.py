@@ -1,14 +1,13 @@
 from flask import Flask,render_template,request
 from flask_mysqldb import MySQL 	
-import mysql.connector
-import yaml
+ 
 app=Flask(__name__)
 
 
 
 app.config['MySQL_HOST']='localhost'
 app.config['MySQL_USER']='root'                 
-app.config['MySQL_PASSWORD']='9960551687' 
+app.config['MySQL_PASSWORD']='' 
 app.config['MySQL_DB']='bankdb'
 mysql=MySQL(app)
 mycur=mysql.connection.cursor() 
